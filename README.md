@@ -1,0 +1,2 @@
+# Smart-Aktau
+Store
