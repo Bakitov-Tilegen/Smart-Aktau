@@ -1,0 +1,97 @@
+.my-work {}
+
+.work-title {
+
+}
+
+.work {
+    background-color: #202020;
+    display: flex;
+    margin-bottom: 3rem;
+    border-radius:5px;
+    @include breakpoint ($mobile-bp) {
+        flex-direction: column;
+        background-color: transparent;
+    }
+}
+.work-preview {
+    display: flex;
+    width: 310px;
+    @include breakpoint ($mobile-bp) {
+        width: auto;
+    }
+}
+.work-img {
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+.work-content {
+    flex-grow: 1;
+    max-width: 290px;
+    padding:  2.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+    @include breakpoint ($mobile-bp) {
+        width: auto;
+        max-width: ($mobile-bp);
+        padding: 2rem 1.5rem;
+    }
+}
+
+.work-title-item {
+    font-size: 2.4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    a {
+        color:$white;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+.work-text {
+    font-size: 1.6rem;
+    line-height: 1.68;
+    font-weight: 300;
+    color: #d2d2d2;
+    margin-bottom: 3rem;
+}
+
+
+.work-tag-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include breakpoint ($mobile-bp) {
+        justify-content: flex-start;
+
+    }
+}
+.work-tag-item {
+ margin-bottom: 3rem;
+ @include breakpoint ($mobile-bp) {
+    margin-right: 1.5rem;
+    margin-bottom: 5rem;
+    
+}
+
+}
+
+.btn--work{
+    
+}
+.work-link {
+    margin-top: auto;
+    align-self: flex-end;
+    border-radius: 5px;
+
+    @include breakpoint ($mobile-bp) {
+        align-self: start;
+    }
+    
+}

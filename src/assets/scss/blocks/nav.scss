@@ -1,0 +1,58 @@
+.nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list {
+    display: flex;
+
+    @include breakpoint ($tablet-bp) {
+        display: none;
+
+        
+    }
+}
+.nav-item {
+    position: relative;
+    transition:  background-color .2s linear;
+    &:hover {
+        @include breakpoint ($tablet-bp) {
+            background-color: transparent;
+        }
+        background-color: $blue;
+        > .subnav-list {
+            display: block;
+        }
+    }
+}
+.nav-item--exit {
+    transition:  background-color .2s linear;
+    &:hover {
+        background-color: lighten($red, 5%);
+    }
+}
+.nav-link {
+    display: block;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+
+    &.has-subnav {
+        position: relative;
+        padding-right: 3.2rem;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 47%;
+            right: 1.4rem;
+            border-style: solid;
+            border-width: 6px 5px 0 5px;
+            border-color: $white transparent transparent transparent;
+            
+        }
+    }
+}

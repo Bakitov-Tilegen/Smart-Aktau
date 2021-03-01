@@ -1,0 +1,39 @@
+.nav-page {
+
+}
+.nav-page-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.nav-page-item {    
+    text-align: center;
+    box-shadow: 0 4px 4px rgba($black, .25);
+    &:not(:last-child) {
+      margin-right: 10px;  
+    }
+    
+}
+.nav-page-link {
+    box-shadow: 0 5px 0 rgba($black, .15);
+    transition: background-color .3s linear;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+    background-color: $black;
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        background-color: lighten(#0d0d0d, 3);
+    }
+    &.nav-page-link--active {
+        box-shadow: 0 5px 0 rgba(#104BE3, .15);
+        background-color: #104BE3;
+        cursor: auto;
+    }
+}

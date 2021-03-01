@@ -1,0 +1,53 @@
+.cabinet {
+    display: flex;
+
+    @include breakpoint ($mobile-bp) {
+        flex-direction: column;
+    }
+}
+.cabinet-group {
+    margin-bottom: 2.5rem;
+}
+.cabinet-form {
+    width: 34rem;
+    @include breakpoint ($mobile-bp){
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        width: 30rem;
+        
+    }
+
+}
+.cabinet-avatar {
+    padding-left: 11rem;
+    flex-grow: 1;
+
+    @include breakpoint ($tablet-bp--690) {
+        order: 1;
+        padding-left: 3rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        align-self: center;
+        padding: 0;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+}
+.cabinet-file {
+    input {
+        display: none;
+    }
+    span {
+        cursor: pointer;
+        color: #107EFF;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

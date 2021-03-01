@@ -1,0 +1,78 @@
+.contact-popup-wrapper {
+    // display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-index-modal;
+    background-color: rgba($black, .8);
+
+}
+.contact-popup {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    // padding: 8rem 8rem 2.5rem ;
+    background-color: #202020;
+    border-radius: 5px;
+    color: $dark-gray;
+
+    @include breakpoint ($tablet-bp) {
+        width: 95%;
+    }
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px 40px 80px;
+&>input {
+    color: $white;
+    border: none;
+    padding: 10px 5px;
+    border-bottom: 1px solid $dark-gray;
+    background: transparent;
+    margin-bottom: 25px;
+    width: 340px;
+}
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: $white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    max-width: 240px;
+}
+.contact-about-us {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom:25px;
+    font-size: 1.2rem;
+}
+.contact-email-text {
+    
+}
+.contact-email-link {
+    margin-right: 15px;
+}
+.contact-phone-link,
+.contact-email-link {
+    color: $dark-gray;
+    &:hover {
+        text-decoration: none;
+    }
+    
+    &>span {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,135 @@
+---
+layout: default
+title: BrainsCloud | Home
+---
+
+<!-- //!!stories-->
+<section class="stories">
+    <ul class="stories-list">
+        <li class="stories-item" data-modal="stories-modal">
+            <h4 class="stories-title">Отдыхаю на природе</h4>
+            <img class="stories-img" src="./assets/images/main/stories-1.jpg" alt="Сторис 1" width="140" height="195">
+            <time class="stories-date" datetime="2020-09-21 19:15">21.09.2020</time>
+        </li>
+        <li class="stories-item" data-modal="stories-modal">
+            <h4 class="stories-title">Заканчиваю сложный проект</h4>
+            <img class="stories-img" src="./assets/images/main/stories-2.jpg" alt="Сторис 1" width="140" height="195">
+            <time class="stories-date" datetime="2020-09-15 11:19">15.09.2020</time>
+        </li>
+        <li class="stories-item" data-modal="stories-modal">
+            <h4 class="stories-title">Переехал в новую квартиру</h4>
+            <img class="stories-img" src="./assets/images/main/stories-3.jpg" alt="Сторис 1" width="140" height="195">
+            <time class="stories-date" datetime="2020-09-11 21:24">11.09.2020</time>
+        </li>
+        <li class="stories-item" data-modal="stories-modal">
+            <h4 class="stories-title">Осень пришла!</h4>
+            <img class="stories-img" src="./assets/images/main/stories-4.jpg" alt="Сторис 1" width="140" height="195">
+            <time class="stories-date" datetime="2020-08-28 01:00">28.08.2020</time>
+        </li>
+    </ul>
+    <!--//!?stories-->
+
+</section>
+
+<!--//!!Add post-->
+<section class="add-post">
+    <form class="add-post-form" action="/" method="POST">
+        <textarea class="add-post-text" name="post-text" placeholder="Напишите что-нибудь" data-autoresize></textarea>
+        <div class="add-post-btn-wrapper">
+            <label class="add-post-file" for="post-file-id">
+                <input type="file" name="post-file" id="post-file-id">
+            </label>
+            <button class="add-post-btn" type="submit">
+                Отправить
+            </button>
+        </div>
+    </form>
+</section>
+<!--//!?Add post-->
+
+<!--//!!Post-->
+<article class="post">
+    <ul class="post-list">
+        <li class="post-item post-header">
+            <div class="post-wrapper">
+                <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis dicta,
+                    distinctio officia molestiae ducimus ex ut tenetur, voluptatum reiciendis inventore sunt voluptates
+                    ea minus
+                    dolorum aspernatur veniam qui facere.</p>
+                <time datetime="2020-06-21" class="post-time">21.06.2020</time>
+            </div>
+        </li>
+        <li class="post-item post-content">
+
+            <img class="post-image" src="./assets/images/main/post-header-1.jpg" alt="Картинка">
+            <div class="post-wrapper">
+                <a href="post.html" class="post-link-wrapper">
+                    <h4 class="post-title">Как писать код быстро и безболезненно?</h4>
+                </a>
+                <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis dicta,
+                    distinctio officia molestiae ducimus ex ut tenetur, voluptatum reiciendis inventore sunt voluptates
+                    ea minus
+                    dolorum aspernatur veniam qui facere.</p>
+                <div class="post-footer">
+                    <time datetime="2020-06-21" class="post-time post-time-dot">21.06.2020</time>
+                    <span class="post-footer-text">создание сайтов</span>
+                    <a href="post.html" class="post-link">читать</a>
+                </div>
+            </div>
+        </li>
+        <li class="post-item post-content post-content--video">
+            <div class="post-video-wrapper">
+                <!-- <iframe class="post-video" id="ytplayer" type="text/html" width="560" height="315"
+        src="https://www.youtube.com/watch?v=Hw7iB-zkYrk&ab_channel=Rozetked"
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        frameborder="0" allow= "accelerometer; autoplay; clipboard-write; -->
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Hw7iB-zkYrk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+            <div class="post-wrapper">
+                <a href="post.html" class="post-link-wrapper">
+                    <h4 class="post-title">Купил новый ноутбук за 150 000 рублей</h4>
+                </a>
+                <p class="post-text"></p>
+                <div class="post-footer">
+                    <time datetime="2020-06-21" class="post-time post-time-dot">21.06.2020</time>
+                    <span class="post-footer-text">создание сайтов</span>
+                    <a href="#" class="post-link">оставить коментарий</a>
+                </div>
+            </div>
+        </li>
+        <li class="post-item post-content">
+            <img class="post-image" src="./assets/images/main/frontend-conf.jpg" alt="#">
+            <div class="post-wrapper">
+                <a href="post.html" class="post-link-wrapper">
+                    <h4 class="post-title">Как писать код быстро и безболезненно?</h4>
+                </a>
+                <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis dicta,
+                    distinctio officia molestiae ducimus ex ut tenetur, voluptatum reiciendis inventore sunt voluptates
+                    ea minus
+                    dolorum aspernatur veniam qui facere.</p>
+                <div class="post-footer">
+                    <time datetime="2020-06-21" class="post-time post-time-dot">21.06.2020</time>
+                    <span class="post-footer-text">создание сайтов</span>
+                    <a href="post.html" class="post-link">читать</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</article>
+<!--//!?Post-->
+
+<!--!!nav-page-->
+<section class="nav-page">
+    <ul class="nav-page-list">
+        <li class="nav-page-item"><a href="#" class="nav-page-link">&lt;</a></li>
+        <li class="nav-page-item"><a href="#" class="nav-page-link nav-page-link--active">1</a></li>
+        <li class="nav-page-item"><a href="#" class="nav-page-link">2</a></li>
+        <li class="nav-page-item"><a href="#" class="nav-page-link">3</a></li>
+        <li class="nav-page-item"><a href="#" class="nav-page-link">&gt;</a></li>
+    </ul>
+</section>
+<!--//!?nav-page-->

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>profile</title>
+</head>
+<body class=""> <!--class="no-scroll" JS addClass show-sidebar-->
+  <div class="page" id="page">
+     <!--header--> 
+    <header class="header">
+        <div class="header__left">
+            <nav class="nav left-nav">
+                <ul class="nav-list left-list">
+                    <li class="nav-item left-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item left-item"><a class="nav-link has-subnav" href="#"> Статьи</a>
+                    <ul class="subnav-list">
+                        <li class="subnav-item"><a href="../create-site.html" class="subnav-link">Создание сайтов</a></li>
+                        <li class="subnav-item"><a href="#" class="subnav-link">Интернет-маркетинг</a></li>
+                        <li class="subnav-item"><a href="#" class="subnav-link">Продвижение видео</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item left-item"><a class="nav-link" href="../text.html"> Обо мне</a></li>
+                    <li class="nav-item left-item"><a class="nav-link" href="../text.html"> Реклама</a></li>
+                </ul>
+            </nav>
+            <button class="burger " type="button" id="sidebarToggle"> 
+                <span>Открыть навигацию</span>
+            </button>
+        </div>
+        <div class="header__right">
+            <nav class="nav right-nav">
+                <ul class="nav-list right-list">
+                    <li class="nav-item right-item"><a class="nav-link" href="profile.html">Профиль</a></li>
+                    <li class="nav-item--exit right-item"><a class="nav-link" href="#">Выйти</a></li>
+                </ul>
+                
+                <form class="search" action="create-site.html" method="GET">
+                    <input class="search__input" type="search" placeholder="Поиск по блогу" >
+                </form>
+            </nav>
+        </div>    
+    </header>
+    <!--sidebar-->
+    <aside class="sidebar" id="sidebar">
+        <section class="sidebar__header">
+            <img src="../assets/images/header/sidebar-header.jpg" alt="" width="300" height="180">
+        </section>
+        <section class="sidebar__content">
+            <div class="profile">
+                <img src="/assets/images/header/avatar.jpg" alt="Аватар" class="profile__avatar" width="100" height="100">
+                <div class="profile__header">
+                    <div class="profile__name">Бақитов Тілеген</div>
+                    <div class="profile__prof">Блок front-end разработчика</div>
+                </div>
+                <a href="" class="nav-lin"></a>
+                <ul class="social__list">
+                    <li class="social__item"><a href="#" class="social__link"><img src="/assets/images/header/instagram.svg"
+                                alt="instagram"></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><img src="/assets/images/header/vk.svg"
+                                alt="vk"></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><img src="/assets/images/header/pinterest.svg"
+                                alt="pinterest"></a></li>
+                </ul>
+                <div class="profile__text">
+                    <p>Front-end разработчик. Практик верстки сайтов.
+                        Созданием сайтов занимаюсь с 2019 года.
+                        Работал в нескольких ИТ компаниях и
+                        наработал более 100 часов в создании сайтов
+                        различной сложности.</p>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <ul class="nav-list mobile-nav-list">
+                    <li class="mobile-nav-item nav-item"><a class="nav-link mobile-nav-link has-subnav"
+                            href="#">Статьи</a>
+                        <!--KEY-->
+                        <ul class="subnav-list">
+                            <li class="subnav-item nav-item"><a class="nav-link mobile-nav-link subnav-link"
+                                    href="../create-site.html">Создание сайтов</a></li>
+                            <li class="subnav-item nav-item"><a class="nav-link mobile-nav-link subnav-link" href="#">Интернет-маркетинг</a></li>
+                            <li class="subnav-item nav-item"><a class="nav-link mobile-nav-link subnav-link" href="#">Продвижение видео</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-item nav-item"><a class="nav-link mobile-nav-link" href="../text.html">Обо
+                            мне</a></li>
+                    <li class="mobile-nav-item nav-item"><a class="nav-link mobile-nav-link"
+                            href="../text.html">Реклама</a></li>
+                    <li class="mobile-nav-item nav-item"><a class="nav-link mobile-nav-link"
+                            href="profile.html">Профиль</a></li>
+                            
+    
+                            
+                </ul>
+            </nav>
+            <!--//!!profile-->
+    
+        </section>
+        <!--sidebar__content-->
+        <section class="sidebar__footer">
+            <a class="btn btn--red" href="../my-work.html">Мои работы</a>
+            <button class="btn btn--blue" type="button" data-modal="contacts-modal">Написать мне</button>
+    
+        </section>
+    </aside>    
+    <main class="main">
+        <div class="container">
+            <div class="container--profile">
+            <h1 class="page-title">Профиль</h1>
+            <form action="/" method="POST" class="debate-form">
+                <div class="cabinet">
+                    <div class="cabinet-form">
+                        <div class="debate-group cabinet-group">
+                            <input class="debate-control" type="text" placeholder="Имя" value="Тілеген Бакитов">
+                            <span class="debate-line"></span>
+                        </div>
+                        <div class="debate-group cabinet-group">
+                            <input class="debate-control" type="email" placeholder="Ваш email" value="bakitovtilegen@gmail.com">
+                            <span class="debate-line"></span>
+                        </div>
+            
+                        <div class="debate-group cabinet-group">
+                            <input class="debate-control" type="password" placeholder="Новый пароль">
+                            <span class="debate-line"></span>
+                        </div>
+            
+                        <div class="debate-group cabinet-group">
+                            <input class="debate-control" type="password" placeholder="Потвердить пароль">
+                            <span class="debate-line"></span>
+                        </div>
+                    </div>
+            
+            
+                    <div class="cabinet-avatar">
+                        <img src="./assets/images/header/naruto.gif" alt="автарка" width="150" height="150">
+                        <label class="cabinet-file">
+                            <input type="file">
+                            <span>выбрать автар</span>
+                        </label>
+            
+                    </div>
+                </div>
+            
+                <button class="btn btn--blue work-link btn--profile" type="submit">Сохранить</button>
+            
+                
+            </form>
+            </div>
+        </div>
+   
+    </main>
+    <!-- footer
+    <footer class="footer">Footer</footer>
+ -->
+
+    
+    <!--!!contacts modal-->
+    <section class="popup-wrapper contact-popup-wrapper" id="contacts-modal">
+        <div class="popup contact-popup">
+            <button class="btn-close" type="button">
+                <img class="btn-close-img" src="../assets/images/main/close.svg" alt="close">
+            </button>
+    
+            <form action="/" method="POST" class="debate-form contact-form debate-form--mb">
+                <div class="cabinet signup under-none">
+                    <div class="cabinet-form">
+                        <div class="debate-group cabinet-group">
+                            <input class="debate-control" type="text" placeholder="Ваше имя">
+                            <span class="debate-line"></span>
+                        </div>
+    
+                        <div class="debate-group cabinet-group">
+                            <input class="debate-control" type="email" placeholder="Ваш email">
+                            <span class="debate-line"></span>
+                        </div>
+                        <div class="debate-group cabinet-group">
+                            <textarea class="debate-textarea" placeholder="Текст сообщения"></textarea>
+                            <span class="debate-line"></span>
+                        </div>
+    
+                    </div>
+    
+                    <div class="footer-form footer-form-auth">
+                        <ul class="footer-form-list">
+                            <li class="footer-form-item footer-form-item--start"><button class="btn btn--blue work-link "
+                                    type="submit">Отправить</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+            <div class="contact-about-us">
+                <span class="contact-email-text">e-mail: </span><a href="info@mywebsite.ru"
+                    class="contact-email-link">info@mywebsite.ru </a>
+                <span class="contact-phone-text">тел: </span><a href="+94323285622" class="contact-phone-link">
+                    +943-232-856-22</a>
+            </div>
+        </div>
+    </section>
+    <!--//!?contacts modal-->    <!--!!share modal-->
+    <section class="popup-wrapper share-popup-wrapper">
+        <div class="popup contact-popup share-popup">
+            <button class="btn-close" type="button">
+                <img class="btn-close-img" src="../assets/images/main/close.svg" alt="close">
+            </button>
+            <ul class="share-list">
+                <li class="shre-item"><a class="share-link" href="https://www.facebook.com/"><img src="../assets/images/footer/facebook.svg" alt="facebook"> </a></li>
+                <li class="shre-item"><a class="share-link" href="https://twitter.com/?lang=ru"><img src="../assets/images/footer/twitter.svg" alt="twitter"> </a></li>
+                <li class="shre-item"><a class="share-link" href="https://vk.com/"> <img src="../assets/images/footer/vk.svg" alt="vk"></a></li>
+                <li class="shre-item"><a class="share-link" href="#"> <img src="../assets/images/footer/copy.svg" alt="copy"></a></li>
+            </ul>
+     
+        </div>
+    </section>
+    <!--//!?share modal-->    <!--!!stories modal-->
+    <section class="popup-wrapper share-popup-wrapper" id="stories-modal">
+        <div class="popup contact-popup stories-popup">
+            <video class="video-popup" src="" poster="https://placehold.it/420x580"></video>
+     
+        </div>
+    </section>
+    <!--//!?stories modal-->
+
+
+  </div>
+  <!-- Browser sync client js не работает -->
+
+
+  <!--написать мне сторис попап-->
+    <script> 
+    const body = document.body;
+    const modalBtn = document.querySelectorAll("[data-modal]");
+    const modalClose = document.querySelectorAll(".btn-close");
+    const modal = document.querySelectorAll(".popup-wrapper");
+    const modalContent = document.querySelectorAll(".popup");
+
+
+
+    modalBtn.forEach(item => {
+        item.addEventListener("click", event => {
+            let $this = event.currentTarget;
+            let modalId = $this.getAttribute("data-modal");
+            let modal = document.getElementById(modalId);
+
+            modal.classList.add('show');
+            body.classList.add('no-scroll');
+
+            setTimeout(function () {
+                modal.style.transform = "none";
+            }, 1);
+            
+            
+        });
+    });
+    
+    modalClose.forEach(item => {
+        item.addEventListener("click", event => {
+            let currentModal = event.target.closest(".popup-wrapper");
+            closeModal(currentModal);
+        });
+    });
+
+    modal.forEach(item => {
+        item.addEventListener("click", event => {
+            let currentModal = event.target;
+            closeModal(currentModal);
+        });
+    });
+
+    function closeModal (currentModal) {
+        currentModal.classList.remove('show');
+        body.classList.remove('no-scroll');     
+        
+    }
+    </script>
+<!--написать мне сторис попап-->
+
+
+<!--бургер меню-->
+    <script>
+    const burger = document.getElementById("sidebarToggle");
+    const sidebar = document.getElementById("sidebar");
+    const page = document.getElementById("page");
+
+    burger.addEventListener("click", event => {
+        document.body.classList.toggle("show-sidebar");
+        
+    });
+
+    function showSidebar() {
+        let mask = document.createElement('div');
+        mask.classList.add('page-mask');
+        mask.addEventListener('click');
+        page.appendChild('mask');
+    }
+
+    function closeSidebar() {
+        console.log('closed')
+    }
+    </script>
+<!--бургер меню-->
+
+<!--Авто увел textarea-->
+<script>
+const textArea = document.querySelectorAll('[data-autoresize]');
+
+textArea.forEach(item => {
+    item.addEventListener('input', event => {
+        let $this = event.target;
+
+        $this.style.height = '30px';
+        $this.style.height = $this.scrollHeight + 'px';
+    });
+});
+    
+</script>
+
+<!--Авто увел textarea-->
+
+
+
+</body>
+</html>

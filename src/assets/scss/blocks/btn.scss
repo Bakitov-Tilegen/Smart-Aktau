@@ -1,0 +1,59 @@
+.btn {
+    display: inline-flex;
+    vertical-align: top;
+
+    background: $secondary;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    padding: 1em 1.7em;
+    
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: $white;
+    transition: background-color .2s linear;
+
+    &--red {
+        background-color: $red;
+        box-shadow: 0 7px 17px -10px rgba($red, .3);
+      
+        &:hover {
+            background-color: darken($red, 7%);
+        }
+    }
+
+    &--blue {
+        background-color: $blue;
+        box-shadow: 0 7px 17px -10px rgba($blue, .3);
+       
+        &:hover {
+            background-color: darken($blue, 7%);
+        }
+    }
+    &--work {
+        background-color: #EA8C1E;
+        border-radius: 3px;
+        padding: .6rem .9rem;
+        text-align: center;
+        align-self: center;
+        &:hover {
+            background-color: darken(#EA8C1E, 5%);
+        }
+    }
+    &--profile {
+        @include breakpoint ($mobile-bp) {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+.btn--center {
+    align-self: center;
+    border-radius: 5px;
+}

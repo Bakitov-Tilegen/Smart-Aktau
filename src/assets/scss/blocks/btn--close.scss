@@ -1,0 +1,15 @@
+.btn-close {
+    cursor: pointer;
+    transition: transform .2s linear, opacity .2s linear;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    opacity: .5;
+
+&:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+}

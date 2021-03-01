@@ -1,0 +1,27 @@
+.mobile-nav {
+    display: none;
+    @include breakpoint ($tablet-bp) {
+        display: flex;
+        margin: 3rem 0;
+    }
+}
+.mobile-nav-list {
+    display: none;
+    @include breakpoint ($tablet-bp) {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mobile-nav-link {
+    display: none;
+    @include breakpoint ($tablet-bp) {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: none;
+        padding: 1rem 1rem;
+    }
+}

@@ -1,0 +1,369 @@
+.post-list {
+    margin-bottom: 80px;
+
+    @include breakpoint ($mobile-bp) {
+        margin-bottom: 5rem;
+    }
+}
+
+.post-item {
+    padding: 2.5rem 0;
+    box-sizing: border-box;
+    background-color: #202020;
+    color: #d2d2d2;
+    // min-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba($black, .35);
+
+    &>img {
+        box-shadow: 0px 5px 10px rgba($black, .25);
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+}
+
+.post-item:not(:last-child) {
+    margin: 0 0 3rem;
+
+}
+
+.post-image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.post-content {
+    padding-top: 0;
+}
+
+.post-content--video {
+    padding: 2.5rem;
+
+    .post-wrapper {
+        padding: 0;
+    }
+}
+
+.post-wrapper {
+    padding: 0 2.5rem;
+
+    @include breakpoint ($mobile-bp) {
+        padding: 0 1.5rem;
+    }
+}
+
+.post-video-wrapper {
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+    iframe,
+    video,
+    object,
+    embed,
+    .fr-video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.fr-video {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+
+    iframe {
+        width: 100%;
+    }
+
+}
+
+.post-video {
+    border-radius: 7px;
+    box-shadow: 0px 5px 10px rgba($black, .25);
+}
+
+.post-link-wrapper {
+    font: inherit;
+    text-decoration: none;
+}
+
+.post-title {
+    color: $white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2.5rem 0 1.5rem;
+    line-height: 1.4;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &--full {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        @include breakpoint ($mobile-bp) {
+            padding-top: 1.8rem;
+        }
+
+    }
+
+}
+
+.post-text-wrapper {
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #1c1c1c;
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: $white;
+    }
+
+    h3 {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: $white;
+    }
+
+    h4 {
+        font-size: 1.3em;
+        font-weight: 700;
+        color: $white;
+    }
+
+    h5,
+    h6 {
+        font-size: 1.2em;
+        color: $white;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 2.5rem;
+    }
+
+    a {
+        color: #107EFF;
+        text-decoration: none;
+
+        &:hover {
+            color: rgba($white, .6);
+            text-decoration: underline;
+        }
+    }
+
+    ol {
+        margin-bottom: 3rem;
+        list-style: decimal;
+        list-style-position: inside;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+
+    span {
+        font-size: 1.2rem;
+        color: rgba($white, .5);
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid rgba($white, .6);
+        text-align: center;
+
+    }
+
+    th {
+        border: 1px solid rgba($white, .6);
+        padding: .5rem;
+    }
+
+    tr {
+        border: 1px solid rgba($white, .6);
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba($blue, .4);
+    }
+
+    td {
+        border: 1px solid rgba($white, .6);
+        padding: .5rem;
+
+        a {
+            color: #107EFF;
+        }
+    }
+}
+
+.post-text {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.post-table {
+    min-width: 320px;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    
+    @include breakpoint ($mobile-bp) {
+        padding: 0;
+    }
+    @include breakpoint ($mobile-table) {
+        padding-right: 75px;
+        padding-left: 0;
+    }
+}
+
+
+@include breakpoint ($mobile-bp) {
+    .post-table table thead {
+        display: none;
+    }
+
+    .post-table table tr {
+        display: block;
+    }
+
+    .post-table table td {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+
+    .post-table table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 20px;
+    }
+}
+
+.post-text--footer {
+
+    padding-bottom: 3rem;
+    margin-bottom: 0rem;
+    border-bottom: 2px solid #1c1c1c;
+}
+
+.img-mb {
+    margin-bottom: 3rem;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint ($mobile-bp) {
+        flex-wrap: wrap;
+    }
+
+    &--full {
+        justify-content: start;
+        margin-bottom: 3rem;
+    }
+}
+
+.post-footer-text {
+    font-size: 1.2rem;
+    color: #828282;
+}
+
+.post-time {
+    font-size: 1.2rem;
+    color: #828282;
+}
+
+.post-time-dot {
+    margin-right: 36px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: $dark-gray;
+        border-radius: 50%;
+        top: 7px;
+        right: -20px;
+    }
+}
+
+.post-link {
+    text-transform: lowercase;
+    transition: color .2s ease-out;
+    margin: 0 0 0 auto;
+    color: #107EFF;
+    text-decoration: none;
+
+    &:hover {
+        color: #828282;
+        text-decoration: underline;
+    }
+
+    @include breakpoint ($mobile-bp) {}
+}
+
+.post-actions {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include breakpoint ($mobile-bp) {
+        padding-top: 0;
+    }
+
+    &--link {
+        transition: opacity .2s ease;
+        font-size: 1.2rem;
+        color: $white;
+        opacity: .6;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+    }
+}
+
+.post-actions--img {
+    margin-left: .5rem;
+    fill: rgba($white, .6);
+}
